@@ -49,7 +49,22 @@ class _TableWidgetState extends State<TableWidget> {
   }
   @override
   Widget build(BuildContext context) {
-    
+
+
+//       int marcosPorProceso(int size){
+//   int defMarcos;
+//   double marcos=(size/sizeMarcos);
+//   if(marcos> marcos.roundToDouble())
+//     defMarcos=marcos.round()+1;
+//     else
+//     defMarcos=marcos.toInt();
+//     return defMarcos;
+// }
+
+      // int prueba=24;
+      // print(marcosPorProceso(prueba).toString() + "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE" );
+      // print(prueba/16);
+      // print((1.5).roundToDouble());
     
     // delProceso("quinto");
 
@@ -238,10 +253,9 @@ int marcosPorProceso(int size){
   if(marcos> marcos.roundToDouble())
     defMarcos=marcos.round()+1;
     else
-    defMarcos=marcos.toInt();
+    defMarcos=marcos.round().toInt();
     return defMarcos;
 }
-
 int espaciosSuficientesParaProceso(int numerosdeMarcosporProceso){
 for(int i=0;i<registro.length;i++){
       int marcosDisponibles=0;
